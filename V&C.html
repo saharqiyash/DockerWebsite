@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Virtualization vs. Containerization</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<!-- Main Content -->
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/navbar.png" alt="" /></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars ml-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ml-auto">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">HOME</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">Internet Works<span class="sr-only">(current)</span></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="Virtualization.html">Virtualization</a>
+                        <a class="dropdown-item active" href="#">Containerization</a>
+                        <a class="dropdown-item active" href="#">Virtualization vs. Containerization</a>
+                        <a class="dropdown-item" href="http.html">HTTP/HTTPS protocols</a>
+                        <a class="dropdown-item" href="html.html">W3C, HTML & CSS</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="post.html">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="contact.html">TEAM</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Masthead-->
+<header class="masthead" style="background-image: url('assets/img/Invention.jpg')">
+    <div class="container">
+        <div class="masthead-heading text-uppercase">Virtualization vs. Containerization</div>
+    </div>
+</header>
+<br>
+
+<div class="container">
+
+    <h1>Virtualization vs. Containerization</h1>
+    <p class="lead">After taking a look at each of these technologies, the question is, which one should be used?
+        The answer is that it depends on several different points. Essentially, each business and application will
+        have different needs, requirements, and purpose. The choice of virtualization versus containerization depends
+        on the business development and operational model, and the way applications are written and produced. Both are
+        software technologies that create self-contained virtual packages, but to choose the one that will best suit
+        the user’s needs, we will look at the following points.</p>
+    <a ><img src="assets/img/Picture3.png" alt="" /></a>
+    <p class="lead">Speed: When it comes to speed, containers were meant to significantly reduce the time needed to
+        deploy and run an application. The container starts immediately, since the operating system is already up and
+        running, so the application will start up without any noticeable delay. On the other hand, virtual machines need
+        to start the entire operating system, which includes the full boot process. This will also include the startup of
+        the services, and it will take much longer than it would for a container.</p>
+    <p class="lead">Operating system requirements: A virtual machine is best used in the case when a business needs to run
+        multiple applications that require the full functionality of a dedicated operating system. However, if most of the
+        applications have the same operating system requirements, the containers would be a much more practical solution.</p>
+    <p class="lead">Resources: Since virtual servers run separate operating systems, and every system call has to go through the virtualization layer, a certain amount of overhead is created, causing more resources to be used. However, CPU virtualization is relatively cheap, so the CPU overhead of a virtual machine can be much smaller. When it comes to containers, they can start up pretty quickly, so their memory consumption doesn’t increase.</p>
+    <p class="lead">Portability and application sharing: Since container images are much smaller than virtual machines, they are easier to transfer and save space on the host’s filesystem. Virtual machines, on the other hand, need to have a copy of the whole operating system, including the kernel, system libraries, configuration files, all the directories required by the operating system and all the utilities.</p>
+    <p class="lead">However, it is also important to note that there are also ways of combining virtualization and containerization so that both technologies’ advantages are brought together. Such a combination is called a hybrid container architecture, and it can combine them by putting a virtual machine inside of a container, or a single container inside of a virtual machine, or multiple containers inside a virtual machine.</p>
+    <iframe width="1000" height="800" src="https://www.youtube.com/embed/L1ie8negCjc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Contact form JS-->
+<script src="assets/mail/jqBootstrapValidation.js"></script>
+<script src="assets/mail/contact_me.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+</body>
+
+
+</html>
