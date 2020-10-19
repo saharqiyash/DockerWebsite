@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>IP addresses, Packets, & Routing</title>
+        <title>Containerization</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -35,10 +35,10 @@
 
                 <li class="nav-item dropdown">
                     <a class="nav-link active dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">Internet Works<span class="sr-only">(current)</span></a>
+                       aria-haspopup="true" aria-expanded="false">Blogs<span class="sr-only">(current)</span></a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="Virtualization.html">Domain Names/ICANN</a>
-                        <a class="dropdown-item active" href="#">IP address, Packets & Routing</a>
+                        <a class="dropdown-item" href="Virtualization.html">Virtualization</a>
+                        <a class="dropdown-item active" href="#">Containerization</a>
                         <a class="dropdown-item" href="dns.html">DNS</a>
                         <a class="dropdown-item" href="http.html">HTTP/HTTPS protocols</a>
                         <a class="dropdown-item" href="html.html">W3C, HTML & CSS</a>
@@ -54,50 +54,31 @@
 <!-- Masthead-->
 <header class="masthead" style="background-image: url('assets/img/Invention.jpg')">
     <div class="container">
-        <div class="masthead-heading text-uppercase">IP addresses, Packets, & Routing</div>
+        <div class="masthead-heading text-uppercase">Containerization</div>
     </div>
 </header>
 <br>
 
 <div class="container">
 
-    <h1>IP Addresses</h1>
-    <p class="lead"> An IP address, or simply an "IP," is a unique address that identifies a device on the
-        Internet or a local network. It allows a system to be recognized by other systems connected via the
-        Internet protocol. There are two primary types of IP address formats used today — IPv4 and IPv6. </p>
+    <h1>What is Containerization</h1>
+    <p class="lead"> Containerization was developed to solve many of the problems
+        of virtualization. The purpose of the containers is to encapsulate an application
+        and its dependencies within its own environment. This allows them to run in isolation
+        while they are using the same system resources and the same operating system. Since the
+        resources are not wasted on running separate operating systems tasks, containerization
+        allows for a much quicker, lightweight deployment of applications. Each container image
+        could be only a few megabytes in size, making it easier to share, migrate, and move.</p>
+    <a ><img src="assets/img/Picture2.png" alt="" /></a>
+    <p>Apps and their dependencies sit in containers on top of a ‘container runtime environment’
+        which can work on a host operating system and the infrastructure of choice.</p>
 
-    <h3>IPv4</h3>
-    <p class="lead">An IPv4 address consist of four sets of numbers from 0 to 255, separated by three dots.
-        For example, the IP address of Wiki.com is 67.43.14.98. This number is used to identify the Wiki
-        website on the Internet.</p>
-
-    <h3>IPv6</h3>
-    <p class="lead">IPv6 is the latest version of the Internet Protocol, which identifies devices across the internet
-        so they can be located. Every device that uses the internet is identified through its own IP address in order
-        for internet communication to work. In that respect, it’s just like the street addresses and zip codes you need
-        to know in order to mail a letter.</p>
-
-    <h1>Packets</h1>
-    <p class="lead">A packet is a small amount of data sent over a network, such as a LAN or the Internet.
-        Similar to a real-life package, each packet includes a source and destination as well as the content
-        (or data) being transferred. When the packets reach their destination, they are reassembled into a single
-        file or other contiguous block of data.</p>
-    <p class="lead">Packets are intended to transfer data reliably and efficiently. Instead of transferring a large
-        file as a single block of data, sending smaller packets helps ensure each section is transmitted successfully.
-        If a packet is not received or is "dropped," only the dropped packet needs to be resent. Additionally, if a
-        data transfer encounters network congestion due to multiple simultaneous transfers, the remaining packets can
-        be rerouted through a less congested path.</p>
-    <h1>Routing</h1>
-    <p class="lead">Routing is the process of moving a packet of data from source to destination. Routing is usually
-        performed by a dedicated device called a router. Routing is a key feature of the Internet because it enables
-        messages to pass from one computer to another and eventually reach the target machine. Each intermediary
-        computer performs routing by passing along the message to the next computer. Part of this process involves
-        analyzing a routing tablet determine the best path. Routing is often confused with bridging, which performs a
-        similar function. The principal difference between the two is that bridging occurs at a lower level and is
-        therefore more of a hardware function whereas routing occurs at a higher level where the software component
-        is more important. And because routing occurs at a higher level, it can perform more complex analysis to
-        determine the optimal path for the packet.</p>
-
+    <p class="lead">A container engine can easily manage large numbers of containers so we can create,
+        add, and remove containers as needed. The maintenance of containers is also simplified since we
+        need to update, patch, and fix bugs on only one operating system. It is also worth noting that
+        containers decrease hardware costs since the allocation of multiple applications to the same hardware
+        improves hardware utilization.</p>
+    <iframe width="1000" height="800" src="https://www.youtube.com/embed/tG32lSzW85A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
