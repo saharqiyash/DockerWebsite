@@ -1,3 +1,3 @@
 # Website on Docker, Linux, and Containerization
-Screen Shot 2020-10-20 at 7.23.19 PM
+![image](https://user-images.githubusercontent.com/71403347/96655704-1f43bb80-130c-11eb-8865-478949e8d895.png)
 https://saharqiyash.github.io/DockerWebsite/
