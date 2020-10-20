@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Virtualization</title>
+    <title>Docker Web Server</title>
      <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -37,9 +36,9 @@
                      <a class="nav-link active dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Software Tools<span class="sr-only">(current)</span></a>
                      <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item active" href="Virtualization.html">Virtualization</a>
-                         <a class="dropdown-item " href="containerization.html">Containerization</a>
-                         <a class="dropdown-item " href="V&C.html">Virtualization vs. Containerization</a>
+                         <a class="dropdown-item active" href="Virtualization.html">Virtualization</a>
+                         <a class="dropdown-item " href="#">Containerization</a>
+                         <a class="dropdown-item " href="#">Virtualization vs. Containerization</a>
                          <a class="dropdown-item" href="Dockerwebserver.html">DockerWebserver</a>
                          <a class="dropdown-item" href="BasicCommands.html">Basic Commands</a>
                          <a class="dropdown-item" href="DockerPycharm.html">Docker Pycharm</a>
@@ -55,31 +54,25 @@
 <!-- Masthead-->
 <header class="masthead" style="background-image: url('assets/img/Invention.jpg')">
     <div class="container">
-        <div class="masthead-heading text-uppercase">Virtualization</div>
+        <div class="masthead-heading text-uppercase">Docker Web Server</div>
     </div>
 </header>
 <br>
 
 <div class="container">
 
-    <h1>What is Virtualization?</h1>
-    <p class="lead"> Virtualization provides for the existence of multiple, smaller virtual servers, within
-        the framework of a larger server’s physical environment. The virtualization software which runs on the
-        parent basically allocates resources to each virtual server along with its own operating system, drivers,
-        binaries, libraries, and applications. These virtual servers are isolated from each other and have no knowledge
-        they are running within a virtualized platform nor aware that they are sharing resources with the other virtual
-        machines.</p>
-    <a ><img src="assets/img/Picture1.png" alt="" /></a>
+    <h1>How to set a web server on your local computer?</h1>
+    <p class="lead"> We are going create a simple web portal through nginx by inputting this command: “docker run -d -P ----name web nginx”
+Next you are going to look for the port and ip address to see where the  website is running on, to find this information type “docker port web”  and “docker-machine ip default. Type the ip address following the last five digits of the 80/tcp. Example: 192.168.64.1:32781
+Once, information is found you can type this in your web browser search bar and you will get a display for a default web server called nginx
+</p>
+    <a ><img class="img-responsive" src="assets/img/nginx.png" alt="" /></a>
 <h1></h1>
-    <p class="lead">The software that is vital for virtualization is called a hypervisor. A hypervisor can be hardware,
-        software, or firmware-based. Essentially, it is a virtual layer that separates the physical server from the
-        virtual machines and allows for multiple guest operating systems to run side by side within that system.
-        The hypervisor ensures that the VM’s have access to a defined amount of resources utilizing the main physical
-        servers resources and that they remain separated and are portioned to each virtual machine as configured.
-        VM’s can also update and modify the applications within their own space without affecting the applications on
-        another virtual machine.</p>
+    <p class="lead">To personalize this web page, first you want to create your a directory and call it my site, the command would be
+    mkdir mysite. Next, create a file page in that site called index.html, echo " a new website" > index.html. This just writes text " a new website" on the nginx server.
+        Finally, run this site using docker run -d -P -v $Home/mysite:/usr/share/nginx/ html \ (fit to your path). This will run a webpage on the same IP address as before with the text "a new webiste" </p>
 
-    <iframe width="1000" height="800" src="https://www.youtube.com/embed/iBI31dmqSX0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <<iframe width="560" height="315" src="https://www.youtube.com/embed/2FOnngHmF7Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>></iframe>
 
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
